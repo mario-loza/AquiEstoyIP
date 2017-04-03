@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="configuracion" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="configuracion">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="autostart" type="xs:boolean" minOccurs="0" />
+                <xs:element name="mensaje" type="xs:string" minOccurs="0" />
+                <xs:element name="ip" type="xs:string" minOccurs="0" />
+                <xs:element name="puerto" type="xs:string" minOccurs="0" />
+                <xs:element name="minutos" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <configuracion>
+    <autostart>true</autostart>
+    <mensaje>Soy la agencia 100 (Argentina)</mensaje>
+    <ip>192.168.0.3</ip>
+    <puerto>3333</puerto>
+    <minutos>2</minutos>
+  </configuracion>
+</NewDataSet>
